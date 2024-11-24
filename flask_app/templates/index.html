@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lista de Alunos</title>
+</head>
+<body>
+    <h1>Lista de Alunos</h1>
+    <a href="/cadastrar">Cadastrar Novo Aluno</a>
+    <ul>
+        {% for aluno in alunos %}
+        <li>{{ aluno.nome }} - {{ aluno.ra }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
